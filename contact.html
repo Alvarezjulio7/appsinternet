@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo del curso">
+            <h1>EduCom</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="register.html">Registrarse</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contactenos</h2>
+                <ul>
+                    <li><strong>Teléfono:</strong> +52 5615213714</li>
+                    <li><strong>Correo:</strong> c3sarartz@gmail.com</li>
+                    <li><strong>Localidad:</strong> Texcoco</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>Ayuda</h2>
+                <form action="contacto.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Dinos tu problema:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group" type="submit" value="Enviar">
+                        <button class="button">
+                            <div class="svg-wrapper-1">
+                              <div class="svg-wrapper">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                  height="24"
+                                >
+                                  <path fill="none" d="M0 0h24v24H0z"></path>
+                                  <path
+                                    fill="currentColor"
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <span>Enviar</span>
+                          </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
